@@ -10,23 +10,23 @@ services:
       - auth_network
     environment:
       - MYSQL_ROOT_PASSWORD=YOUR_PASSWORD
-  auth_service:
-    container_name: auth_service
+  go_auth_jwt:
+    container_name: go_auth_jwt
     restart:
       always
-    image: auth_service:1.0
+    image: go_auth_jwt:1.0
     ports:
-      - 8080:8080
+      - 9000:9000
     depends_on:
       - mysql
     networks:
       - auth_network
     environment:
-      - MYSQL_USERNAME=root
-      - MYSQL_PASSWORD=YOUR_PASSWORD
+      - MYSQL_USER=root
+      - MYSQL_PASS=YOUR_PASSWORD
       - MYSQL_HOST=mysql
       - MYSQL_PORT=3306
-      - MYSQL_DB=laravel-test
+      - MYSQL_DB=YOUR_DB
     volumes:
       - auth_db_mysql:/data/db
 
