@@ -1,4 +1,4 @@
-<h1>Simple Auth Service</h1>
+<h1>Go Auth with JWT</h1>
 <p>A fast, lightweight, and secure JWT authentication service built using <strong>Go</strong>, <strong>MySQL</strong>, and <strong>Docker</strong>
 </p>
 <p>Ideal for developers who want a quick and secure way to implement user authentication in their apps. With Docker containerization, this service is also easily deployable and scalable for modern applications.</p>
