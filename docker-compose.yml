@@ -26,7 +26,7 @@ services:
       - MYSQL_PASSWORD=YOUR_PASSWORD
       - MYSQL_HOST=mysql
       - MYSQL_PORT=3306
-      - MYSQL_DB=product_service_db
+      - MYSQL_DB=laravel-test
     volumes:
       - auth_db_mysql:/data/db
 
